@@ -2,11 +2,14 @@
 import { StyleSheet, Text, View, FlatList, Button, TouchableOpacity } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
+import ColorsScreen from './src/ColorsScreen';
 import ComponentsScreen from './src/ComponentsScreen';
 import CounterScreen from './src/CounterScreen';
 import HomeScreen from './src/HomeScreen'
 import ImageScreen from './src/ImageScreen';
 import ListScreen from './src/ListScreen';
+import SquareScreen from './src/SquareScreen';
+import TextScreen from './src/TextScreen';
 
 const navigator = createStackNavigator(
   {
@@ -15,6 +18,9 @@ const navigator = createStackNavigator(
     Component: ComponentsScreen,
     Image: ImageScreen,
     Counter: CounterScreen,
+    Color: ColorsScreen,
+    Square: SquareScreen,
+    Text: TextScreen
   },
   {
     initialRouteName: 'Home',
