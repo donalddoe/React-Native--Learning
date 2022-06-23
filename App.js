@@ -2,6 +2,7 @@
 import { StyleSheet, Text, View, FlatList, Button, TouchableOpacity } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
+import BoxScreen from './src/BoxScreen';
 import ColorsScreen from './src/ColorsScreen';
 import ComponentsScreen from './src/ComponentsScreen';
 import CounterScreen from './src/CounterScreen';
@@ -20,7 +21,8 @@ const navigator = createStackNavigator(
     Counter: CounterScreen,
     Color: ColorsScreen,
     Square: SquareScreen,
-    Text: TextScreen
+    Text: TextScreen,
+    Box: BoxScreen
   },
   {
     initialRouteName: 'Home',
